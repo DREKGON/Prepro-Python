@@ -1,17 +1,17 @@
 """ Prepro 61 """
 
 def main():
-    """ Prohibited Items """
-    prohibited = ["addictive substances", "cigarettes", "weapons", "alcohol", "illegal items"]
-    items_list = list()
+    """ Ascending Sort """
     num = int(input())
+    emplist = []
 
     for _ in range(num):
-        item = input().lower()
-        if item not in prohibited:
-            items_list.append(item)
+        num1 = int(input())
+        emplist.append(num1)
 
-    for i in items_list:
-        print(i.lower())
+    emplist.sort()
+
+    for i in emplist:
+        print(i)
 
 main()

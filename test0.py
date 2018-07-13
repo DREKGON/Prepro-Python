@@ -1,16 +1,17 @@
 """ Prepro 61 """
 
 def main():
-    """ Sorted Score """
-    data = list()
-    amount = int(input())
+    """ Descending Sort """
+    num = int(input())
+    emplist = []
 
-    for _ in range(amount):
-        name = input()
-        score = int(input())
-        data.append([score, name])
+    for _ in range(num):
+        num1 = int(input())
+        emplist.append(num1)
 
-    for i in sorted(data):
-        print(i[0], i[1])
+    emplist.sort(reverse=True)
+
+    for i in emplist:
+        print(i)
 
 main()

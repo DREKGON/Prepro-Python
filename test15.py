@@ -1,18 +1,14 @@
 """ Prepro 61 """
 
 def main():
-    """ The Matrix!!! """
-    matrix = list()
-    row, col = int(input()), int(input())
-
-    for _ in range(row):
-        matrix.append([])
-        for _ in range(col):
-            matrix[-1].append(int(input()))
-
-    for i in matrix:
-        for j in i:
-            print(j, end=" ")
-        print()
+    """ Find Distance Between 2 Points """
+    num = input()
+    num = num.split(", ")
+    list_new = []
+    for i in num:
+        i = int(i)
+        list_new.append(i)
+    sorted(list_new)
+    print(list_new)
 
 main()
